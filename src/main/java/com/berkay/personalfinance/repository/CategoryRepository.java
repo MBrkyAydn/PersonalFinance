@@ -1,6 +1,7 @@
 package com.berkay.personalfinance.repository;
 
 import com.berkay.personalfinance.entity.Category;
+import com.berkay.personalfinance.entity.User;
 import com.berkay.personalfinance.enums.CategoryType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -19,5 +20,7 @@ public interface CategoryRepository extends JpaRepository<Category, Long> {
     Optional<Category> findByIdAndUserId(Long id, Long userId);
 
     boolean existsByNameIgnoreCaseAndUserId(String name, Long userId);
+
+    Long user(User user);
 }
 
