@@ -14,17 +14,21 @@ import com.berkay.personalfinance.enums.TransactionType;
 import com.berkay.personalfinance.exception.BadRequestException;
 import com.berkay.personalfinance.exception.ResourceNotFoundException;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
- import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
-
+@Service
+@RequiredArgsConstructor
+@Transactional(readOnly = true)
 public class TransactionServiceImpl implements TransactionService {
-    private CategoryRepository categoryRepository;
-    private UserRepository userRepository;
-    private TransactionRepository transactionRepository;
-    private TransactionMapper transactionMapper;
+    private final CategoryRepository categoryRepository;
+    private final UserRepository userRepository;
+    private final TransactionRepository transactionRepository;
+    private final TransactionMapper transactionMapper;
 
     @Override
     @Transactional
