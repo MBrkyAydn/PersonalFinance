@@ -27,6 +27,8 @@ public class TransactionMapper {
                         .type(transactionRequestDto.getType())
                         .category(category)
                         .user(user)
+                        .description(transactionRequestDto.getDescription() != null ? transactionRequestDto.getDescription().trim() : null)
+                        .transactionDate(transactionRequestDto.getTransactionDate())
                         .build();
 
     }
