@@ -11,6 +11,7 @@ import com.berkay.personalfinance.exception.ResourceNotFoundException;
 import com.berkay.personalfinance.mapper.CategoryMapper;
 import com.berkay.personalfinance.repository.CategoryRepository;
 import com.berkay.personalfinance.repository.UserRepository;
+import com.berkay.personalfinance.serviceimp.CategoryServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

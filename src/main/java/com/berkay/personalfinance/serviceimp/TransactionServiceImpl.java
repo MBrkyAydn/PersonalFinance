@@ -1,4 +1,4 @@
-package com.berkay.personalfinance.service;
+package com.berkay.personalfinance.serviceimp;
 
 import com.berkay.personalfinance.mapper.TransactionMapper;
 import com.berkay.personalfinance.repository.CategoryRepository;
@@ -14,6 +14,7 @@ import com.berkay.personalfinance.enums.TransactionType;
 import com.berkay.personalfinance.exception.BadRequestException;
 import com.berkay.personalfinance.exception.ResourceNotFoundException;
 
+import com.berkay.personalfinance.service.TransactionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

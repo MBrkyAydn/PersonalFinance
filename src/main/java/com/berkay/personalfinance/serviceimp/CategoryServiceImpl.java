@@ -1,4 +1,4 @@
-package com.berkay.personalfinance.service;
+package com.berkay.personalfinance.serviceimp;
 
 import com.berkay.personalfinance.dto.CategoryRequestDto;
 import com.berkay.personalfinance.dto.CategoryResponseDto;
@@ -10,6 +10,7 @@ import com.berkay.personalfinance.exception.ResourceNotFoundException;
 import com.berkay.personalfinance.mapper.CategoryMapper;
 import com.berkay.personalfinance.repository.CategoryRepository;
 import com.berkay.personalfinance.repository.UserRepository;
+import com.berkay.personalfinance.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

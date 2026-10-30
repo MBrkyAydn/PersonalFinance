@@ -15,6 +15,7 @@ import com.berkay.personalfinance.mapper.TransactionMapper;
 import com.berkay.personalfinance.repository.CategoryRepository;
 import com.berkay.personalfinance.repository.TransactionRepository;
 import com.berkay.personalfinance.repository.UserRepository;
+import com.berkay.personalfinance.serviceimp.TransactionServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
