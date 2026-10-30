@@ -5,6 +5,7 @@ import com.berkay.personalfinance.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -13,19 +14,23 @@ import org.springframework.stereotype.Component;
 public class DataInitializer implements CommandLineRunner {
 
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+
 
     @Override
     public void run(String... args) {
         if (userRepository.count() == 0) {
-            log.info("Creating user");
+            log.info("Veritabanında kullanıcı bulunamadı. Test kullanıcıları BCrypt ile hashlenerek oluşturuluyor...");
+
             User user1 = User.builder()
                     .email("ahmet@example.com")
-                    .password("pass123") // Güvenlik aşamasında BCrypt ile hashleyeceğiz
+                    //.password("pass123") // Güvenlik aşamasında BCrypt ile hashleyeceğiz
+                    .password(passwordEncoder.encode("123456"))
                     .role(Role.ROLE_USER)
                     .build();
             User user2 = User.builder()
                     .email("mehmet@example.com")
-                    .password("pass123")
+                    .password(passwordEncoder.encode("pass123"))
                     .role(Role.ROLE_USER)
                     .build();
             userRepository.save(user1);
