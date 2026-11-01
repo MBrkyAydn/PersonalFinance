@@ -1,8 +1,8 @@
 package com.berkay.personalfinance.service;
 
 
-import com.berkay.personalfinance.dto.CategoryRequestDto;
-import com.berkay.personalfinance.dto.CategoryResponseDto;
+import com.berkay.personalfinance.requestdto.CategoryRequestDto;
+import com.berkay.personalfinance.responsedto.CategoryResponseDto;
 import com.berkay.personalfinance.enums.CategoryType;
 
 import java.util.List;

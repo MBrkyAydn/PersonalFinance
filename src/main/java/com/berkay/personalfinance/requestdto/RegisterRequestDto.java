@@ -1,4 +1,4 @@
-package com.berkay.personalfinance.dto;
+package com.berkay.personalfinance.requestdto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

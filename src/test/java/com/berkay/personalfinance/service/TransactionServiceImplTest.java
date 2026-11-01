@@ -1,8 +1,8 @@
 package com.berkay.personalfinance.service;
 
-import com.berkay.personalfinance.dto.CategoryResponseDto;
-import com.berkay.personalfinance.dto.TransactionRequestDto;
-import com.berkay.personalfinance.dto.TransactionResponseDto;
+import com.berkay.personalfinance.responsedto.CategoryResponseDto;
+import com.berkay.personalfinance.requestdto.TransactionRequestDto;
+import com.berkay.personalfinance.responsedto.TransactionResponseDto;
 import com.berkay.personalfinance.entity.Category;
 import com.berkay.personalfinance.entity.Transaction;
 import com.berkay.personalfinance.entity.User;

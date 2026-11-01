@@ -1,13 +1,12 @@
 package com.berkay.personalfinance.mapper;
 
 
-import com.berkay.personalfinance.dto.TransactionRequestDto;
-import com.berkay.personalfinance.dto.TransactionResponseDto;
+import com.berkay.personalfinance.requestdto.TransactionRequestDto;
+import com.berkay.personalfinance.responsedto.TransactionResponseDto;
 import com.berkay.personalfinance.entity.Category;
 import com.berkay.personalfinance.entity.Transaction;
 import com.berkay.personalfinance.entity.User;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component

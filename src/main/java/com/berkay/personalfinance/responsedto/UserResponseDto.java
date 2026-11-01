@@ -1,4 +1,4 @@
-package com.berkay.personalfinance.dto;
+package com.berkay.personalfinance.responsedto;
 
 import com.berkay.personalfinance.enums.Role;
 import lombok.*;

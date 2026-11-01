@@ -1,7 +1,7 @@
 package com.berkay.personalfinance.mapper;
 
-import com.berkay.personalfinance.dto.RegisterRequestDto;
-import com.berkay.personalfinance.dto.UserResponseDto;
+import com.berkay.personalfinance.requestdto.RegisterRequestDto;
+import com.berkay.personalfinance.responsedto.UserResponseDto;
 import com.berkay.personalfinance.entity.User;
 import com.berkay.personalfinance.enums.Role;
 import org.springframework.stereotype.Component;

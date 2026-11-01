@@ -1,4 +1,4 @@
-package com.berkay.personalfinance.dto;
+package com.berkay.personalfinance.requestdto;
 
 
 import com.berkay.personalfinance.enums.TransactionType;

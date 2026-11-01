@@ -1,7 +1,9 @@
 package com.berkay.personalfinance.controller;
 
-import com.berkay.personalfinance.dto.RegisterRequestDto;
-import com.berkay.personalfinance.dto.UserResponseDto;
+import com.berkay.personalfinance.requestdto.LoginRequestDto;
+import com.berkay.personalfinance.requestdto.RegisterRequestDto;
+import com.berkay.personalfinance.responsedto.AuthResponseDto;
+import com.berkay.personalfinance.responsedto.UserResponseDto;
 import com.berkay.personalfinance.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -25,4 +27,12 @@ public class AuthController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
 
     }
+
+@PostMapping("/login")
+public ResponseEntity<AuthResponseDto> login(@Valid @RequestBody LoginRequestDto loginRequestDto) {
+        AuthResponseDto response = authService.login(loginRequestDto);
+        return ResponseEntity.status(HttpStatus.OK).body(response);
+
+}
+
 }

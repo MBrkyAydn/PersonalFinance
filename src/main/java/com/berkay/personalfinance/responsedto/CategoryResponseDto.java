@@ -1,9 +1,8 @@
-package com.berkay.personalfinance.dto;
+package com.berkay.personalfinance.responsedto;
 
 import com.berkay.personalfinance.enums.CategoryType;
 import lombok.*;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter

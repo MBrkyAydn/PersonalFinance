@@ -1,8 +1,7 @@
 package com.berkay.personalfinance.controller;
 
-import com.berkay.personalfinance.dto.CategoryRequestDto;
-import com.berkay.personalfinance.dto.CategoryResponseDto;
-import com.berkay.personalfinance.entity.Category;
+import com.berkay.personalfinance.requestdto.CategoryRequestDto;
+import com.berkay.personalfinance.responsedto.CategoryResponseDto;
 import com.berkay.personalfinance.enums.CategoryType;
 import com.berkay.personalfinance.security.CustomUserDetails;
 import com.berkay.personalfinance.service.CategoryService;

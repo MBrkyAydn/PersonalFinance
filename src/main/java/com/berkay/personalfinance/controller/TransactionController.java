@@ -1,7 +1,7 @@
 package com.berkay.personalfinance.controller;
 
-import com.berkay.personalfinance.dto.TransactionRequestDto;
-import com.berkay.personalfinance.dto.TransactionResponseDto;
+import com.berkay.personalfinance.requestdto.TransactionRequestDto;
+import com.berkay.personalfinance.responsedto.TransactionResponseDto;
 import com.berkay.personalfinance.enums.TransactionType;
 import com.berkay.personalfinance.security.CustomUserDetails;
 import com.berkay.personalfinance.service.TransactionService;
