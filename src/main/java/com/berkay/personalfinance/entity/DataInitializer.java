@@ -37,6 +37,18 @@ public class DataInitializer implements CommandLineRunner {
             userRepository.save(user2);
             log.info("Test kullanıcıları oluşturuldu: Ahmet (ID: 1), Mehmet (ID: 2)");
         }
+
+        // Admin kullanıcısı yoksa oluştur: admin@example.com / admin123
+        if (!userRepository.existsByEmail("admin@example.com")) {
+            User admin = User.builder()
+                    .email("admin@example.com")
+                    .password(passwordEncoder.encode("admin123"))
+                    .role(Role.ROLE_ADMIN)
+                    .build();
+            userRepository.save(admin);
+            log.info("Admin kullanıcısı oluşturuldu: admin@example.com / admin123 (ROLE_ADMIN)");
+        }
+
     }
 
 }
